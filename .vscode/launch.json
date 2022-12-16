@@ -1,0 +1,18 @@
+{
+	// a deno launch.json config
+	"configurations": [
+		{
+			"type": "pwa-node",
+			"request": "launch",
+			"name": "Launch Program",
+			"skipFiles": ["<node_internals>/**"],
+			"program": "${workspaceFolder}/debug.ts",
+			// "runtimeExecutable": "/Users/brian.dombrowski/.asdf/shims/nodemon",
+			// "runtimeArgs": ["deno", "run", "--inspect-brk", "--unstable", "--allow-all"],
+			"runtimeExecutable": "deno",
+			"runtimeArgs": ["run", "--inspect-brk", "--unstable", "--allow-all"],
+			"restart": true,
+			"attachSimplePort": 9229
+		}
+	]
+}
